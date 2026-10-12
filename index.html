@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b43">
+  <meta name="description" content="A six-slide interactive presentation about the Indus River Basin. Press Space to reveal information and move through the slides.">
+  <title>The Indus River Basin — Interactive Presentation</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="content.js" defer></script>
+  <script src="state.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#presentation">Skip to presentation</a>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#" id="home-link" aria-label="Return to the first slide"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M18 3c-7 8 8 9 1 16-4 4-8 7-3 12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><span>INDUS<span class="wordmark-sub">THE RIVER BASIN</span></span></a>
+      <p class="topbar-caption">An interactive presentation</p>
+      <div class="topbar-actions">
+        <button class="quiet-button" id="overview-button" type="button" aria-haspopup="dialog"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="3" width="5" height="5" rx="1"/><rect x="12" y="3" width="5" height="5" rx="1"/><rect x="3" y="12" width="5" height="5" rx="1"/><rect x="12" y="12" width="5" height="5" rx="1"/></svg><span>Overview</span></button>
+        <button class="quiet-button" id="fullscreen-button" type="button" aria-label="Enter fullscreen" title="Fullscreen (F)"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4"/></svg><span>Fullscreen</span></button>
+      </div>
+    </header>
+
+    <main id="presentation" class="presentation" tabindex="-1" aria-label="Six-slide presentation">
+      <section class="slide-content" aria-labelledby="slide-title">
+        <div class="chapter-line"><span class="chapter-rule" aria-hidden="true"></span><p id="chapter-label">01 / THE BASIN</p></div>
+        <div class="title-slot"><h1 id="slide-title">The Indus River Basin:</h1></div>
+        <div class="step-header"><span class="step-heading" id="point-heading">READY TO BEGIN</span><div id="step-dots" class="step-dots" aria-hidden="true"></div></div>
+        <div class="information-window" id="information-window">
+          <div class="information-card intro-card" id="information-card"><div class="start-ripple" aria-hidden="true"><span></span><span></span><span></span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><p>Press <kbd>Space</kbd> to reveal the first point.</p><span class="intro-caption">Take it one idea at a time.</span></div>
+        </div>
+        <div class="point-progress"><span id="point-status">0 / 2 points</span><span class="copy-note" id="copy-note">Explore with Space or →</span></div>
+      </section>
+
+      <figure class="image-panel" id="image-panel">
+        <div class="image-viewport"><img id="slide-photo" src="assets/basin.jpg" alt="The Indus River flowing between mountains in Pakistan." width="1800" height="1200" decoding="async" fetchpriority="high"></div>
+        <div class="image-shade" aria-hidden="true"></div>
+        <div class="image-top"><span class="image-index" id="image-index">01 — 06</span><button type="button" id="enlarge-button" class="image-action" aria-label="Enlarge slide photograph" aria-haspopup="dialog"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4"/></svg></button></div>
+        <svg class="river-illustration" viewBox="0 0 440 600" fill="none" aria-hidden="true"><path class="river-bed" d="M332-30c-170 92 28 122-77 205S86 213 159 313s187 73 113 159S126 550 197 640"/><path class="river-flow" d="M332-30c-170 92 28 122-77 205S86 213 159 313s187 73 113 159S126 550 197 640"/></svg>
+        <figcaption class="image-caption"><span class="caption-dot" aria-hidden="true"></span><span id="image-caption">The Indus River · Pakistan</span><a id="image-credit" href="https://commons.wikimedia.org/wiki/File:Indus_River.jpg" target="_blank" rel="noopener noreferrer" aria-label="View photograph source and credits">Photo credit ↗</a></figcaption>
+      </figure>
+    </main>
+
+    <footer class="presentation-controls">
+      <div class="slide-position"><strong id="slide-current">01</strong><span class="position-divider" aria-hidden="true"></span><span id="slide-total">06</span></div>
+      <nav class="slide-navigation" id="slide-navigation" aria-label="Choose a slide"></nav>
+      <div class="navigation-actions"><button class="back-button" id="back-button" type="button" disabled aria-label="Go back one point or slide"><span aria-hidden="true">←</span><span class="back-text">Back</span></button><button class="next-button" id="next-button" type="button"><span id="next-label">Reveal</span><span aria-hidden="true">→</span></button></div>
+      <div class="overall-progress" role="progressbar" aria-label="Presentation progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="5" id="overall-progress"><span id="overall-progress-fill"></span></div>
+    </footer>
+  </div>
+
+  <dialog class="overview-dialog" id="overview-dialog" aria-labelledby="overview-title"><div class="dialog-heading"><div><p class="dialog-eyebrow">THE COMPLETE PRESENTATION</p><h2 id="overview-title">Six slides. One river.</h2></div><button class="close-button" type="button" id="overview-close" aria-label="Close overview">×</button></div><div class="overview-grid" id="overview-grid"></div><p class="dialog-note">Choose a slide, then press Space to reveal its information.</p></dialog>
+  <dialog class="photo-dialog" id="photo-dialog" aria-labelledby="photo-dialog-caption"><div class="photo-dialog-heading"><p id="photo-dialog-caption">Slide photograph</p><button class="close-button" type="button" id="photo-close" aria-label="Close photograph">×</button></div><img id="enlarged-photo" alt=""><p class="photo-dialog-credit" id="photo-dialog-credit"></p></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <p class="sr-only" id="presentation-status" role="status" aria-live="polite" aria-atomic="true"></p>
+  <div class="print-transcript" id="print-transcript"></div>
+  <noscript><p class="noscript-message">Enable JavaScript to use the slides and Space-bar controls. The included README also contains the complete presentation text.</p></noscript>
+</body>
+</html>

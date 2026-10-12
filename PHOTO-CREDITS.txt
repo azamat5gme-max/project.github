@@ -1,0 +1,47 @@
+Slide 1: The Indus River · Pakistan
+File: assets/basin.jpg
+Credit: Amjad Bilal / Sherazyousafzai2018
+Source: https://commons.wikimedia.org/wiki/File:Indus_River.jpg
+License: CC BY-SA 3.0
+License reference: https://creativecommons.org/licenses/by-sa/3.0/
+Changes: resized and compressed; CSS display may crop the view.
+
+Slide 2: Tarbela Dam · Pakistan
+File: assets/treaty.jpg
+Credit: Shahzeb Cheema
+Source: https://commons.wikimedia.org/wiki/File:Tarbela_Dam_Main.jpg
+License: CC BY-SA 4.0
+License reference: https://creativecommons.org/licenses/by-sa/4.0/
+Changes: resized and compressed; CSS display may crop the view.
+
+Slide 3: Flooding along the Indus · August 28, 2022
+File: assets/conflict.jpg
+Credit: NASA Earth Observatory / Joshua Stevens / USGS
+Source: https://science.nasa.gov/earth/earth-observatory/devastating-floods-in-pakistan-150279/
+License: NASA imagery
+License reference: https://www.nasa.gov/nasa-brand-center/images-and-media/
+Changes: resized and compressed; CSS display may crop the view.
+
+Slide 4: Indus–Zanskar confluence · Ladakh
+File: assets/future.jpg
+Credit: Bernard Gagnon
+Source: https://commons.wikimedia.org/wiki/File:Confluence_of_Indus_and_Zanskar_rivers.jpg
+License: CC BY-SA 4.0
+License reference: https://creativecommons.org/licenses/by-sa/4.0/
+Changes: resized and compressed; CSS display may crop the view.
+
+Slide 5: The Indus at Skardu · Pakistan
+File: assets/conclusion.jpg
+Credit: Zacharie Grossen
+Source: https://commons.wikimedia.org/wiki/File:Indus_at_Skardu.jpg
+License: CC BY-SA 4.0
+License reference: https://creativecommons.org/licenses/by-sa/4.0/
+Changes: resized and compressed; CSS display may crop the view.
+
+Slide 6: Lower Indus River · Landsat, October 19, 2009
+File: assets/sources.jpg
+Credit: NASA / Robert Simmon / Landsat 5
+Source: https://science.nasa.gov/earth/earth-observatory/indus-river-pakistan-43890/
+License: NASA imagery
+License reference: https://www.nasa.gov/nasa-brand-center/images-and-media/
+Changes: resized and compressed; CSS display may crop the view.
